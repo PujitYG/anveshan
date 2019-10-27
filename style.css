@@ -16,6 +16,7 @@
 }
 
 #header{
+    min-width: 100%;
     overflow: hidden;
 }
 
@@ -43,6 +44,15 @@
     overflow: hidden;
 }
 
+.eight-nine{
+    height:50vh;
+    width:300px;
+}
+
+#nov{
+    font-size: 120px;
+}
+
 .anveshan-home{
     color: white;
     font-size:120px;
@@ -61,24 +71,17 @@
 /* body > section {
     height: 100vh;
 } */
-@media only screen and (max-width: 992px) {
-    .anveshan-home{
-        color: white;
-        font-size:70px;
-        font-family: 'Megrim', cursive;
-    }
-    @keyframes zoom{
-        0%{
-          transform: scale(1);
-        }
-        50%{
-          transform: scale(1.1) translateX(0)
-        }
-        100%{
-          transform: scale(1)
-        }
-      }
+.events-row{
+    padding: 30px 15% 30px;
+
 }
+
+
+.eight-nine:hover{
+    opacity: 0.7;
+    transition:all 0.3s linear 0.1s;
+}
+
 
 @keyframes zoom{
     0%{
@@ -96,3 +99,41 @@
     clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%)
 }
 
+
+
+#events{
+    background-image:url(images/home.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .col{
+        padding:0;
+    }
+    .anveshan-home{
+        color: white;
+        font-size:70px;
+        font-family: 'Megrim', cursive;
+    }
+    #nov{
+        font-size: 60px;
+    }
+    .events-row{
+        padding-left:0;
+        padding-right:0;
+    }
+    @keyframes zoom{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(1.1) translateX(0)
+        }
+        100%{
+          transform: scale(1)
+        }
+      }
+}
