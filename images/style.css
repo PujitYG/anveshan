@@ -1,0 +1,147 @@
+/* #text-value{
+    color:black;
+} */
+
+#text-value:hover{
+    text-decoration: underline;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+
+#row-header{
+    margin: auto;
+}
+
+#header{
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.home{
+    overflow-y: hidden;
+    min-height: calc(100vh - 62.8px);
+    background-image: url(images/home.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  animation-name: zoom;
+  animation-duration: 20s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+#carousel-item{
+    background-image: url(images/carousel.png);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+#events{
+    overflow: hidden;
+}
+
+.eight-nine{
+    height:50vh;
+    width:300px;
+}
+
+#nov{
+    font-size: 120px;
+}
+
+.anveshan-home{
+    color: white;
+    font-size:120px;
+    font-family: 'Megrim', cursive;
+}
+
+#row-dates-two{
+    height:50vh;
+}
+
+#dates{
+    padding: 20px 0 20px 0;
+}
+
+
+/* body > section {
+    height: 100vh;
+} */
+.events-row{
+    padding: 30px 15% 30px;
+
+}
+
+
+.eight-nine:hover{
+    opacity: 0.7;
+    transition:all 0.3s linear 0.1s;
+}
+
+
+@keyframes zoom{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2) translateX(0)
+    }
+    100%{
+      transform: scale(1)
+    }
+  }
+
+#header{
+    clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%)
+}
+
+
+
+#events{
+    background-image:url(images/events-back.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+#dis-block{
+    display: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .col{
+        padding:0;
+    }
+    .anveshan-home{
+        color: white;
+        font-size:70px;
+        font-family: 'Megrim', cursive;
+    }
+    #nov{
+        font-size: 60px;
+    }
+    #dis-none{
+        display: none;
+    }
+    #dis-block{
+        display: block;
+    }
+    .events-row{
+        padding:0;
+    }
+    @keyframes zoom{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(1.1) translateX(0)
+        }
+        100%{
+          transform: scale(1)
+        }
+      }
+}
