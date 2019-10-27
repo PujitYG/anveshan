@@ -102,10 +102,13 @@
 
 
 #events{
-    background-image:url(images/home.jpg);
+    background-image:url(images/events-back.jpg);
     background-attachment: fixed;
     background-size:cover;
 
+}
+#dis-block{
+    display: none;
 }
 
 
@@ -121,9 +124,14 @@
     #nov{
         font-size: 60px;
     }
+    #dis-none{
+        display: none;
+    }
+    #dis-block{
+        display: block;
+    }
     .events-row{
-        padding-left:0;
-        padding-right:0;
+        padding:0;
     }
     @keyframes zoom{
         0%{
