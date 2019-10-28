@@ -1,7 +1,9 @@
 /* #text-value{
     color:black;
 } */
-
+#home-container{
+background-color: black;
+}
 #text-value:hover{
     text-decoration: underline;
 }
@@ -17,7 +19,17 @@
 
 #header{
     min-width: 100%;
-    overflow: hidden;
+    overflow:hidden;
+}
+
+.own-div{
+    height: 80vh;
+    display: inline-flex;
+    overflow-x:scroll;
+}
+
+.card{
+    margin: 20px;
 }
 
 .home{
@@ -41,16 +53,34 @@
     background-position: center;
 }
 #events{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .eight-nine{
-    height:50vh;
-    width:300px;
+    font-family: 'Old Standard TT', serif;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size:35vh;
+    background-image: url(images/jssate.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:250px;
 }
 
+.eight-nine-and{
+    font-family: 'Old Standard TT', serif;color: rgb(202, 198, 198);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size:30vh;
+    width:250px;
+}
 #nov{
+    font-family: 'Old Standard TT', serif;
     font-size: 120px;
+    background-image: url(images/jssate.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .anveshan-home{
@@ -73,7 +103,7 @@
 } */
 .events-row{
     padding: 30px 15% 30px;
-
+   
 }
 
 
@@ -111,27 +141,77 @@
     display: none;
 }
 
+#buynow-row{
+    height:50vh;
+}
+
+.fa{
+    padding: 20px 20px;
+}
+
+#socialmedia{
+    background-color: black;
+}
+
+.card-link{
+    color: black;
+    text-decoration: underline;
+}
+.section-title--special{
+    /* background: var(--transparentBlue);
+    color: var(--mainWhite); */
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%,0 100%);
+    background-color: black;
+  }
+.card-link:hover{
+    color:rgb(82, 82, 82);
+    text-decoration:none;
+}
+#card1{
+    width: 40rem;
+}
+#cc{
+    padding:0;
+    margin:0;
+    background-color: black;
+    color: white;
+}
 
 @media only screen and (max-width: 992px) {
+    .and{
+        display: none;
+    }
+    .eight-nine{
+        margin-bottom:10px;
+        font-size:20vh;;
+        /* width:150px; */
+        width:100%;
+        /* max-width: 200px; */
+    }
+    
+    #card1{
+        width: 18rem;
+    }
     .col{
         padding:0;
     }
     .anveshan-home{
         color: white;
-        font-size:70px;
+        font-size:60px;
         font-family: 'Megrim', cursive;
     }
     #nov{
-        font-size: 60px;
+        font-size: 50px;
     }
-    #dis-none{
+    .dis-none{
         display: none;
     }
     #dis-block{
         display: block;
     }
     .events-row{
-        padding:0;
+        padding:30px 0;
     }
     @keyframes zoom{
         0%{
